@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import CardDataStats from '../../components/CardDataStats';
 import GetAllQrcodes from "../../Warden/Scanner/GetAllQrcodes";
-import GetAllQrcodesByTime from "../../Warden/Scanner/GetAllQrCodesByTime"
+import GetAllQrcodesByTime from "../../Warden/Scanner/GetAllQrCodesByTIme"
 import DefaultLayout from '../../layout/WardenLayout';
 
 const ECommerce: React.FC = () => {
