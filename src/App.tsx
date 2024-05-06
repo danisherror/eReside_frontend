@@ -59,7 +59,7 @@ import WShowStudentProfile from "./Warden/Student/ShowStudentProfile"
 import WQRScanner from "./Warden/Scanner/Scanner";
 import WGetAllQrTokens from "./Warden/Scanner/GetAllQrcodes";
 import WProfile from "./Warden/Profile/Profile";
-import Wgetinoutdetail from "./Warden/Scanner/InoutStudent"
+import Wgetinoutdetail from "./Warden/Scanner/InOutStudent"
 //-----------------------------------------------------------------------------
 //Homepage
 import HomePage from "./pages/Dashboard/HomePage"
