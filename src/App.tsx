@@ -4,7 +4,7 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 //student
 import Landing from './college/Logins/LandingPage';
 import LeaveApplication from './Student/LeaveApplication/ApplyLeave'
-import Printleaveapplication from './Student/LeaveApplication/Showleave'
+import Printleaveapplication from './Student/LeaveApplication/ShowLeave'
 import EditLeaveApplication from './Student/LeaveApplication/EditLeave'
 import Roomcomplaint from "./Student/RoomComplaint/RoomComplaint";
 import PrintRoomComplaints from "./Student/RoomComplaint/ShowComplaint";
