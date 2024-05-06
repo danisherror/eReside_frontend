@@ -15,7 +15,7 @@ import EditStudentFeedBack from "./Student/FeedBack/EditFeedBack"
 import ApplyHostel from "./Student/Hostel/ApplyHostel"
 import UProfile from './Student/Profile/Profile';
 import USettings from './Student/Profile/Settings';
-import ShowStudentAnnouncements from "./Student/Announcements/showAnnouncements"
+import ShowStudentAnnouncements from "./Student/Announcements/ShowAnnouncements"
 import GetinoutdetailStudent from "./Student/InoutDetails/InoutDetaile"
 //------------------------------------------------------------------------------
 //admin
