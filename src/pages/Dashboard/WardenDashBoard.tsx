@@ -5,7 +5,7 @@ import GetAllQrcodesByTime from "../../Warden/Scanner/GetAllQrCodesByTIme"
 import DefaultLayout from '../../layout/WardenLayout';
 
 const ECommerce: React.FC = () => {
-  const [roomissues, setRoomIssues] = useState("");W
+  const [roomissues, setRoomIssues] = useState("");
   const [studentdetail, setStudentDetails] = useState("");
   const [leaveData, setLeaveData] = useState("");
   const [feedback, setfeedback] = useState("");
