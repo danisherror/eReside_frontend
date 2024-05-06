@@ -1,17 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import CardDataStats from '../../components/CardDataStats';
-import ChartOne from '../../components/Charts/ChartOne';
 import GetAllQrcodes from "../../Warden/Scanner/GetAllQrcodes";
-import GetAllQrcodesByTime from "../../Warden/Scanner/GetAllQrcodesByTime"
-import ChartThree from '../../components/Charts/ChartThree';
-import ChartTwo from '../../components/Charts/ChartTwo';
-import ChatCard from '../../components/Chat/ChatCard';
-import MapOne from '../../components/Maps/MapOne';
-import TableOne from '../../components/Tables/TableOne';
+import GetAllQrcodesByTime from "../../Warden/Scanner/GetAllQrCodesByTime"
 import DefaultLayout from '../../layout/WardenLayout';
 
 const ECommerce: React.FC = () => {
-  const [roomissues, setRoomIssues] = useState("");
+  const [roomissues, setRoomIssues] = useState("");W
   const [studentdetail, setStudentDetails] = useState("");
   const [leaveData, setLeaveData] = useState("");
   const [feedback, setfeedback] = useState("");
