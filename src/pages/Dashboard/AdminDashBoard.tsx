@@ -1,15 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import CardDataStats from '../../components/CardDataStats';
-import ChartOne from '../../components/Charts/ChartOne';
-import QrtokenByDate from "../../Admin/Scanner/GetAllQrcodes"
-import QrtokenByTime from "../../Admin/Scanner/GetAllQrcodesBytime";
-import ChartThree from '../../components/Charts/ChartThree';
-import ChartTwo from '../../components/Charts/ChartTwo';
-import ChatCard from '../../components/Chat/ChatCard';
-import MapOne from '../../components/Maps/MapOne';
-import TableOne from '../../components/Tables/TableOne';
+import QrtokenByDate from '../../Admin/Scanner/GetAllQrcodes';
+import QrtokenByTime from '../../Admin/Scanner/GetAllQrcodesBytime';
 import DefaultLayout from '../../layout/AdminLayout';
-import ReactApexChart from 'react-apexcharts';
 const ECommerce: React.FC = () => {
 
   const [feedback, setfeedback] = useState("");
