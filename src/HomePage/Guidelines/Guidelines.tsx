@@ -1,7 +1,9 @@
 import React from 'react'
 import HomePageLayout from '../../layout/HomePage';
 import Breadcrumb from "../../components/Breadcrumbs/Breadcrumb"
+import { Link as LinkScrol } from 'react-scroll/modules';
 const Guidelines: React.FC = () => {
+
     const generalGuidelines: string[] = [
         "Hostel members should use water and electricity economically.",
         "Heaters or similar electrical appliances are not allowed. They should not meddle with the fittings already in their rooms or make any additional connections.",
@@ -39,29 +41,39 @@ const Guidelines: React.FC = () => {
 
     return (
         <HomePageLayout>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5">
+
+            <li><a href="#general_guideleine">General Guidelines</a></li>
+            <li><a href="#general_information">General Information</a></li>
+            <li><a href="#hostel_vacate_guideline">Hostel Vacating Guidelines</a></li>
+            </div>
             <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
                 <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-12">
-                    <Breadcrumb pageName="General Guidelines" />
+                    <section id="general_guideleine">
+                        <Breadcrumb pageName="General Guidelines" />
 
-                    {generalGuidelines.map((rule, index) => (
-                        <li key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                            <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
-                            <span>{rule}</span>
-                        </li>
+                        {generalGuidelines.map((rule, index) => (
+                            <li key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                                <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
+                                <span>{rule}</span>
+                            </li>
 
-                    ))}
-                    <br></br>
-                    <p>All the Committees will report directly to Council of Wardens for redressal of their problems. The term of the Committee shall be one academic year. In case of delay in formation of the new Committee, the Council of Wardens may request the Committee in office to continue till a new Committee is formed</p>
-                    <br></br>
-                    <p>These Committees shall take active interest in general welfare of the students residing in the hostel and assist the Council of Wardens in maintaining the living standards and suggest improvements.</p>
-                    <br />
-                    <p>Accommodation is provided in the hostel on the condition that the member shall put in complete attendance in the college and in the hostel and maintain good academic records.</p>
-                    <br></br>
-                    <p>They will also report any unauthorized use of hostel and bring to the notice any untoward incidence occurring in the hostel premises.
+                        ))}
+                        <br></br>
+                        <p>All the Committees will report directly to Council of Wardens for redressal of their problems. The term of the Committee shall be one academic year. In case of delay in formation of the new Committee, the Council of Wardens may request the Committee in office to continue till a new Committee is formed</p>
+                        <br></br>
+                        <p>These Committees shall take active interest in general welfare of the students residing in the hostel and assist the Council of Wardens in maintaining the living standards and suggest improvements.</p>
+                        <br />
+                        <p>Accommodation is provided in the hostel on the condition that the member shall put in complete attendance in the college and in the hostel and maintain good academic records.</p>
+                        <br></br>
+                        <p>They will also report any unauthorized use of hostel and bring to the notice any untoward incidence occurring in the hostel premises.
 
-                    </p>
+                        </p>
+                    </section>
+
                 </div>
                 <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-12">
+                    <section id="general_information"></section>
                     <Breadcrumb pageName="General Information" />
                     {generalInformation.map((rule, index) => (
                         <li key={index} style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
@@ -71,41 +83,45 @@ const Guidelines: React.FC = () => {
 
                     ))}
                 </div>
+
                 <div className="col-span-12 rounded-sm border border-stroke bg-white px-5 pt-7.5 pb-5 shadow-default dark:border-strokedark dark:bg-boxdark sm:px-7.5 xl:col-span-12">
-                    <Breadcrumb pageName="SUCH HOSTEL RESIDENTS WHO WISH TO VACATE THE HOSTEL EITHER IN THE BEGINNING OR DURING THE ACADEMIC SESSION IS ELIGIBLE FOR REFUNDS AS PER THE GUIDE LINES DETAILED BELOW:" />
-                    <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                        <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
-                        <span> IN CASE OF GETTING TRANSFERRED TO A DIFFERENT COLLEGE AFTER REMITTING THE HOSTEL FEE.</span>
-                    </li>
-                    <span>Admission fee of Rs.1000/- shall be deducted and balance will be refunded.</span>
-                    <br />
-                    <br></br>
-                    <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                        <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
-                        <span>STUDENTS VACATING THE HOSTEL WITHIN ONE MONTH FROM THE DATE OF ACTUAL OCCUPATION OF HOSTEL.</span>
-                    </li>
-                    <span>75% of Rent and Maintenance charges and balance of Mess Advance shall be refunded.</span>
-                    <br />
-                    <br></br>
-                    <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                        <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
-                        <span>STUDENTS VACATING THE HOSTEL WITHIN THREE MONTHS FROM THE DATE OF ACTUAL OCCUPATION OF HOSTEL.</span>
-                    </li>
-                    <span>50% of Rent and Maintenance charges and balance of Mess Advance shall be refunded.</span>
-                    <br />
-                    <br></br>
-                    <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                        <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
-                        <span>STUDENTS VACATING THE HOSTEL AFTER THREE MONTHS OF STAY INCLUDING LOSING ELIGIBILITY TO THE NEXT SEMESTER</span>
-                    </li>
-                    <span>Only balance of Mess Advance at their credit shall be refunded.</span>
-                    <br />
-                    <br></br>
-                    <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
-                        <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
-                        <span>Security Deposit, however, will be refunded only after completing the course or officially being relieved from MSRIT.</span>
-                    </li>
+                    <section id="hostel_vacate_guideline">
+                        <Breadcrumb pageName="SUCH HOSTEL RESIDENTS WHO WISH TO VACATE THE HOSTEL EITHER IN THE BEGINNING OR DURING THE ACADEMIC SESSION IS ELIGIBLE FOR REFUNDS AS PER THE GUIDE LINES DETAILED BELOW:" />
+                        <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                            <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
+                            <span> IN CASE OF GETTING TRANSFERRED TO A DIFFERENT COLLEGE AFTER REMITTING THE HOSTEL FEE.</span>
+                        </li>
+                        <span>Admission fee of Rs.1000/- shall be deducted and balance will be refunded.</span>
+                        <br />
+                        <br></br>
+                        <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                            <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
+                            <span>STUDENTS VACATING THE HOSTEL WITHIN ONE MONTH FROM THE DATE OF ACTUAL OCCUPATION OF HOSTEL.</span>
+                        </li>
+                        <span>75% of Rent and Maintenance charges and balance of Mess Advance shall be refunded.</span>
+                        <br />
+                        <br></br>
+                        <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                            <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
+                            <span>STUDENTS VACATING THE HOSTEL WITHIN THREE MONTHS FROM THE DATE OF ACTUAL OCCUPATION OF HOSTEL.</span>
+                        </li>
+                        <span>50% of Rent and Maintenance charges and balance of Mess Advance shall be refunded.</span>
+                        <br />
+                        <br></br>
+                        <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                            <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
+                            <span>STUDENTS VACATING THE HOSTEL AFTER THREE MONTHS OF STAY INCLUDING LOSING ELIGIBILITY TO THE NEXT SEMESTER</span>
+                        </li>
+                        <span>Only balance of Mess Advance at their credit shall be refunded.</span>
+                        <br />
+                        <br></br>
+                        <li style={{ display: 'flex', alignItems: 'center', marginBottom: '10px' }}>
+                            <span style={{ fontSize: '1.5em', marginRight: '5px' }}>•</span>
+                            <span>Security Deposit, however, will be refunded only after completing the course or officially being relieved from MSRIT.</span>
+                        </li>
+                    </section>
                 </div>
+
             </div>
         </HomePageLayout>
     );
